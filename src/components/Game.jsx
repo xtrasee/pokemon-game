@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { createRandomArray, shuffleArray } from "../../utilities";
 
 export default function Game({ size }) {
     const [pokemonList, setPokemonList] = useState([]);
@@ -29,6 +30,7 @@ export default function Game({ size }) {
             .finally(() => {
                 setLoading(false);
             });
+        // clean up function
         return (() => {
             setPokemonList([]);
             setError(null);
@@ -36,4 +38,26 @@ export default function Game({ size }) {
         })
         // idList specifies when effect should be rerun aka when 'idList' changes
     }, [idList]);
+
+    function handleCardClick(id) {
+        if (clickedIdList.includes(id)) {
+            setGameOver(true);
+            if (score > highScore) {
+                setHighScore(score);
+            }
+        }
+        else {
+            setClickedIdList([...clickedIdList, id]);
+            setScore(score + 1);
+            if (score + 1 === size) {
+                setHighScore(size);
+                setGameOver(true);
+            }
+            else {
+                setPokemonList((prevPokemonList) =>
+                    shuffleArray(prevPokemonList)
+                );
+            }
+        }
+    }
 }
