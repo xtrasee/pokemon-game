@@ -1,0 +1,14 @@
+.card{
+    height: 10rem;
+    width: 10rem;
+}
+
+.card img{
+    height: 9rem;
+    width: 9rem;
+}
+
+.p {
+    font-size: 1.25rem;
+    color: var(--glow-color);
+}

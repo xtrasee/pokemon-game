@@ -1,0 +1,32 @@
+.score-container{
+    color: var(--glow-color);
+    font-size: 1.25rem;
+}
+
+.deck{
+    padding: 3rem;
+    max-width: max-content;
+}
+
+.deck button{
+    margin: 1rem;
+    background-color: #388bd0;
+    -webkit-box-shadow:0px 0px 10px 5px rgba(56,140,208,0.92);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(56,140,208,0.92);
+    box-shadow: 0px 0px 10px 5px rgba(56,140,208,0.92);
+}
+
+.deck button:focus{
+    outline: none;
+}
+
+.ending-p{
+    font-size: 4rem;
+    color: var(--glow-color);
+}
+
+.options button{
+    margin: 1rem;
+    background-color: var(--glow-color);
+    font-size: 1.5rem;
+}

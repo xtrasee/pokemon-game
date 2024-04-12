@@ -5,10 +5,10 @@ function App() {
     let difficulty = ["easy", "medium", "hard"];
     return (
         <>
-            <div className="contain">
-                <img src="/logo.png" alt="" />
-            </div>
             <div className="container">
+                <img src="/images/logo.png" alt="hi" />
+            </div>
+            <div className="difficulty-container">
                 {difficulty.map(d =>
                     // creates three buttons for each difficulty level
                     <Link key={d} to={d}>

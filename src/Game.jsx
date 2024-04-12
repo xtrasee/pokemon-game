@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { createRandomArray, shuffleArray } from "../utilities.js";
 import Card from './components/Card.jsx'
+import "./Game.css"
 
 export default function Game({ size }) {
     const [pokemonList, setPokemonList] = useState([]);
@@ -74,20 +75,20 @@ export default function Game({ size }) {
         <div className="banner">
             {score == size ?
                 <>
-                    <div className="p">
+                    <div className="ending-p">
                         You Won!
                     </div>
-                    <img src="/images/pikachu.png" alt="happy pikachu" />
+                    <img src="/images/pikachu.png" alt="happy pikachu" width='400px'/>
                 </>
                 :
                 <>
-                    <div className="p">
+                    <div className="ending-p">
                         Game Over
                     </div>
-                    <img src="/images/surprise-pokemon.gif" alt="shocked pikachu" />
+                    <img src="/images/surprised-pikachu.gif" alt="shocked pikachu" />
                 </>
             }
-            <div className="p">
+            <div className="score-container">
                 <p>Score: {score}</p>
                 <p>highScore: {highScore}</p>
             </div>
@@ -107,10 +108,10 @@ export default function Game({ size }) {
                 <>
                     <div className="header">
                         <Link to="/">
-                            <img src="/logo.png"></img>
+                            <img src="/images/logo.png" className="game-logo"></img>
                         </Link>
                     </div>
-                    <div className="p">
+                    <div className="score-container">
                         <p>Score: {score}</p>
                         <p>highScore: {highScore}</p>
                     </div>

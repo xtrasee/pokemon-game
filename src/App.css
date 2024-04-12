@@ -1,10 +1,24 @@
 #root {
-  /* max-width: 1280px; */
-  /* width: 100vw;
-  height: 100vh; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  /* background-image: url(/images/pokemon-background-1.png); */
-  /* background-size: cover; */
+  --glow-color: hsl(186 100% 69%);
+}
+
+@font-face {
+  font-family: 'main-font';
+  src: url('/public/fonts/main-font.TTF');
+}
+
+body{
+  background-image: url(/images/main-background.png);
+  background-size: cover;
+  font-family: 'main-font';
+}
+
+.difficulty-container button{
+  margin: 1rem;
+  background-color: var(--glow-color);
+  /* background-color: #388bd0; */
+  font-size: 1.5rem;
 }
