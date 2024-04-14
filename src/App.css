@@ -1,5 +1,6 @@
 #root {
   margin: 0 auto;
+  height: 100%;
   text-align: center;
   --glow-color: hsl(186 100% 69%);
 }
@@ -15,6 +16,7 @@ html{
   background-size: cover;
   background-repeat: repeat;
   font-family: 'main-font';
+  word-spacing: 0.5rem;
 }
 
 .difficulty-container button{

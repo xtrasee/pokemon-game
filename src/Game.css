@@ -1,11 +1,11 @@
 .score-container{
     color: var(--glow-color);
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
 .deck{
     padding: 3rem;
-    max-width: max-content;
+    max-width: 100%;
 }
 
 .deck button{

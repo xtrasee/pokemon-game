@@ -1,8 +1,20 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Instructions from "./components/Instructions";
 import './App.css'
 
 function App() {
     let difficulty = ["easy", "medium", "hard"];
+    const [isPopUpOpen, setPopUpOpen] = useState(false);
+    
+    const handleOpen = () => {
+        setPopUpOpen(true);
+    }
+
+    const handleClosed = () => {
+        setPopUpOpen(false);
+    }
+    
     return (
         <>
             <div className="container">
@@ -17,6 +29,8 @@ function App() {
                         </button>
                     </Link>
                 )}
+                <button onClick={handleOpen}>HOW TO PLAY</button>
+                <Instructions isOpen={isPopUpOpen} isClosed={handleClosed}/>
             </div>
         </>
     );
