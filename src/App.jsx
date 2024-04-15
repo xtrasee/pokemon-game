@@ -29,7 +29,7 @@ function App() {
                         </button>
                     </Link>
                 )}
-                <button onClick={handleOpen}>HOW TO PLAY</button>
+                <button onClick={handleOpen} className="instructionsBtn">HOW TO PLAY</button>
                 <Instructions isOpen={isPopUpOpen} isClosed={handleClosed}/>
             </div>
         </>

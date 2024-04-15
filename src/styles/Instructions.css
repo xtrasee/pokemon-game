@@ -3,10 +3,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 75%;
-    margin-left: 10%;
-    margin-top: 12.5%;
-    height: 60%;
+    height: 100%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -25,19 +22,11 @@
 }
 
 @media screen and (max-width:720px){
-    .pop-up{
-        width: 60%;
-        margin-left: 14%;
-    }
-
     .pop-up p{
         font-size: 1rem;
-        width: 100%;
     }
 
     .pop-up h1{
         font-size: 2rem;
-        width: 100%;
-    }
-
+    } 
 }

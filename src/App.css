@@ -26,6 +26,10 @@ html{
   font-size: 1.5rem;
 }
 
+.instructionsBtn{
+  word-spacing: 0.25rem;
+}
+
 @media screen and (max-width: 720px){
 
   .header img{
