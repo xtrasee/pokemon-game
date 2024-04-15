@@ -40,4 +40,12 @@
     .difficulty-container button{
         font-size: 1rem;
     }
+
+    .gameOverPic{
+        width: 50%;
+    }
+
+    .winPic{
+        width: 50%;
+    }
   }

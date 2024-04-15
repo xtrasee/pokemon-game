@@ -78,14 +78,14 @@ export default function Game({ size }) {
                     <div className="ending-p">
                         You Won!
                     </div>
-                    <img src="/images/pikachu.png" alt="happy pikachu" width='400px'/>
+                    <img src="/images/pikachu.png" alt="happy pikachu" width='400px' className="winPic"/>
                 </>
                 :
                 <>
                     <div className="ending-p">
                         Game Over
                     </div>
-                    <img src="/images/surprised-pikachu.gif" alt="shocked pikachu" />
+                    <img src="/images/surprised-pikachu.gif" alt="shocked pikachu" className="gameOverPic"/>
                 </>
             }
             <div className="score-container">
